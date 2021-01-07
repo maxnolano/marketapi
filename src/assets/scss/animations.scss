@@ -1,0 +1,248 @@
+// Page transition/animation
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.1s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+// animation modal
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.3s reverse;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// animation fade opacity
+.fade-op-enter-active, 
+.fade-op-leave-active {
+  transition: opacity 0.8s;
+}
+.fade-op-enter,
+.fade-op-leave-to {
+  opacity: 0;
+}
+// animation slide fade 
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+// animation slide fade right
+.slide-fadeRight-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fadeRight-leave-active {
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fadeRight-enter,
+.slide-fadeRight-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+// animation slide fade down 
+.slide-fadeDown-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fadeDown-leave-active {
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fadeDown-enter,
+.slide-fadeDown-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+// animation fadeInDown
+.fade-in-down-enter-active {
+  animation: fadeInDown .3s;
+}
+.fade-in-down-leave-active {
+  animation: fadeInDown .2s reverse;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.slide-effect-enter-active {
+	-webkit-animation: slide-left 1s ease-in-out backwards;
+	        animation: slide-left 1s ease-in-out backwards;
+}
+.slide-effect-leave-active {
+	-webkit-animation: slide-right 1s ease-in-out ;
+	        animation: slide-right 1s ease-in-out ;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-right
+ * ----------------------------------------
+ **/
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+/**
+ * --------------
+ * slideInLeft
+ * --------------
+ **/
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.slideOutLeft-leave-active {
+  -webkit-animation-name: slideOutLeft;
+          animation-name: slideOutLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; 
+}
+
+/**
+ * --------------
+ * slideInRight
+ * --------------
+ **/
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+// shake form on incorrect data passed 
+@keyframes shake  {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(.5em);
+  }
+  40% {
+    transform: translate(-.5em)
+  }
+  60% {
+    transform: translate(.5em)
+  }
+  80% {
+    transform: translate(-.5em)
+  }
+  100% {
+    transform: translate(0)
+  }
+}

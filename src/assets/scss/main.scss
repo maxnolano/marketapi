@@ -1,0 +1,101 @@
+@import "fonts";
+@import "variables";
+
+:root {
+  --color-main: #e53339;
+  --color-accent: #e53339;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-black-gray: #4B4B4D;
+  --color-header-link: #BDBFC1;
+  --color-text-dark-gray: #414141;
+  --color-subtitle: #949494;
+  --color-text-blue: #0645AD;
+  --color-text-green: #28B035;
+  --color-lighten-gray: #F6F6F6;
+  --color-text-paragraph: #969696;
+
+  --color-home-footer-text: #969696;
+  --color-footer-text: #969696;
+  --color-footer-link: #969696;
+
+  --color-ui-category-text: #1e2129;
+  --color-ui-searchout-title: #1e2129;
+  --color-ui-searchout-label: #393939;
+  --color-ui-vertical-line: #d7d7d7;
+  --color-ui-horizontal-line: #d7d7d7;
+  --color-ui-footer-default: rgba(245, 245, 245, 0.25); 
+  --color-ui-table-head-gradient: linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%);
+  --color-ui-border: #5E6073;
+  --color-ui-multiselect-border: #cdcdcd;
+  --color-ui-search-border: #e5e5e5;
+  --color-ui-search-icon: #a7a7a7;
+  --color-ui-chevron-icon: #a7a7a7;
+  --color-ui-button-bg-gradient: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
+  --color-ui-table-head: #e7e7e7;
+  --color-ui-table-body: #f6f6f6;
+  --color-ui-table-head-text: #474747;
+  --color-ui-table-body-text: #4B4B4D;
+
+  // Cart
+  --color-ui-cart-header-bg: #fcfcfc;
+  --color-ui-cart-header-text: #1e2129;
+  --color-ui-cart-title: #1e2129;
+  --color-ui-qty-border: #e4e4e4;
+  --color-ui-qty-text: #969696;
+  --color-ui-qty-button-disabled: #ededed;
+  --color-ui-cart-button-disabled: #d3d3d3;
+  
+  --color-gray: #f5f5f5;
+  --color-line-gray: #DFE1E5;
+  --color-text-badge: #F6F6F6;
+  --color-text-gray: #2f2f2f;
+  --color-text-subtitle: #545454;
+  --color-checklist-border: #ececec;
+  --color-ui-arrow: #969696;
+  --color-ui-upsell-bg: #f9f9f9;
+  --color-ui-upsell-heading: #474747;
+
+  // Basket page 
+  --color-ui-basket-title: #231F20;
+  --color-ui-basket-subtitle: #999999;
+  --color-ui-basket-header-bg: #4B4B4D;
+  --color-ui-basket-header-text: #F6F6F6;
+  --color-ui-basket-bg: #F6F6F6;
+  --color-ui-basket-sum: #969696;
+
+  //Modal
+  --color-ui-modal-heading: #545454;
+  --color-ui-modal-title: #231F20;
+  --color-ui-modal-border: #e4e4e4;
+  --color-form-field-focus: rgba(66, 153, 225, .5);
+  --color-form-sublabel: #545454;
+  --color-form-disabled: #888b94;
+  --color-form-x: #b9bcc7;
+  --color-form-resendsms-text: #d1d1d1;
+}
+
+html {
+  font-size:                $fontSize;
+  -ms-text-size-adjust:     100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing:  grayscale;
+  -webkit-font-smoothing:   antialiased;
+
+  body {
+    font-family: $fontFamily;
+
+    .container {
+      padding: 1rem;
+    }
+  }
+}
+
+.page-enter-active, .page-leave-active {
+  transition: all .25s ease-out;
+}
+
+.page-enter, .page-leave-active {
+  opacity:          0;
+  transform-origin: 50% 50%;
+}

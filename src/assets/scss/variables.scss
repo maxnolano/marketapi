@@ -1,0 +1,14 @@
+$fontSize:                  14px;
+$fontFamily:                'Exo 2', sans-serif;
+$navigationBackground:      #f5f5f5;
+
+
+/**
+ * Loading component
+ */
+
+$loadingBackgroundColor:    #718096;
+$loadingTextColor:          #24293c;
+$loadingBarBackgroundColor: $loadingTextColor;
+$loadingBarForegroundColor: #A0AEC0;
+$loadingEaseDelay:          4s;
